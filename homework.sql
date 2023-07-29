@@ -43,5 +43,5 @@ CREATE TABLE IF NOT EXISTS CollectionTracks (
     collection_tracks_id SERIAL PRIMARY KEY,
     collection_id INTEGER NOT NULL REFERENCES Collection(collection_id),
     track_id INTEGER NOT NULL REFERENCES Tracks(track_id)
-)
+);
 
